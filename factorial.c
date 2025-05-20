@@ -1,18 +1,20 @@
-#include<stdio.h>
+
+#include <stdio.h>
 #include<math.h>
- 
- int fact(int n){
-     
-     int f=1;
-     for(int i=n;i>=1;i--){
-         f*=i;
+
+
+int factorial(){
+    int x;
+    int result=1;
+   scanf("%d",&x);
+    for(int i=x;i>=1;i++){
+         result*=i;
         
-     }
-      return f;
- }
- int main(){
-       
-         printf("%d",fact(5));
-     }
- 
- 
+    } 
+}
+int main()
+{
+   int x=factorial();
+   printf("%d",x);
+  
+}
